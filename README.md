@@ -92,9 +92,22 @@ Available routes:
 - `GET /file-manager/files` - File browser (for CKEditor/popups)
 - `GET /file-manager/demo` - Demo page
 
-### Blade Component
+### Blade Component (FileUploader)
 
-Use the file upload component in your forms:
+The package includes a `FileUploader` Blade component (`Riwash\SimpleFileManager\Components\FileUploader`) for easy file selection with integrated file picker popup.
+
+**Component Class:** `Riwash\SimpleFileManager\Components\FileUploader`
+
+**Component Properties:**
+
+| Property | Type | Default | Description |
+|----------|------|---------|-------------|
+| `name` | string | `image_url` | Input field name attribute |
+| `id` | string | auto-generated | Input field ID (auto-generated as `file-upload-{random}` if not provided) |
+| `placeholder` | string | `Select file` | Placeholder text for the input field |
+| `previewWidth` | string | `200px` | Width of the image preview (CSS value) |
+
+**Basic Usage:**
 
 ```blade
 <x-fileupload 
@@ -105,11 +118,40 @@ Use the file upload component in your forms:
 />
 ```
 
-Component parameters:
-- `name` - Input field name (default: `image_url`)
-- `id` - Input field ID (auto-generated if not provided)
-- `placeholder` - Placeholder text (default: `Select file`)
-- `previewWidth` - Preview image width (default: `200px`)
+**Advanced Usage with All Parameters:**
+
+```blade
+<x-fileupload 
+    name="thumbnail" 
+    id="product-thumbnail"
+    placeholder="Choose product thumbnail..."
+    previewWidth="150px" 
+/>
+```
+
+**The component automatically:**
+- Generates a unique ID if not provided
+- Creates a text input field with the specified name and placeholder
+- Adds a "Select File" button that opens the file manager popup
+- Displays an image preview next to the input when a file is selected
+- Uses `postMessage` API for communication between popup and parent window
+
+**Programmatic Usage:**
+
+You can also use the component class directly in your PHP code:
+
+```php
+use Riwash\SimpleFileManager\Components\FileUploader;
+
+$component = new FileUploader(
+    name: 'cover_image',
+    id: 'cover-image-input',
+    placeholder: 'Select cover image',
+    previewWidth: '300px'
+);
+
+return $component->render();
+```
 
 ### CKEditor Integration
 
