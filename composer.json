@@ -3,6 +3,19 @@
     "description": "A simple file manager for Laravel integrated with CKEditor",
     "type": "library",
     "license": "MIT",
+    "keywords": [
+        "laravel",
+        "file-manager",
+        "file-uploader",
+        "file-picker",
+        "ckeditor",
+        "file-browser",
+        "media-manager",
+        "image-uploader",
+        "file-upload",
+        "laravel-package",
+        "riwash"
+    ],
     "authors": [
         {
             "name": "Riwash Chamlagain",

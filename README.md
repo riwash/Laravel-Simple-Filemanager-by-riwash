@@ -1,9 +1,12 @@
-# Simple File Manager for Laravel
+# Simple File Manager for Laravel | File Uploader & Picker
 
 [![PHP Version](https://img.shields.io/badge/php-%3E%3D8.0-8892BF.svg)](https://php.net/)
 [![Laravel Version](https://img.shields.io/badge/laravel-%5E7.0%20%7C%5E8.0%20%7C%5E9.0%20%7C%5E10.0%20%7C%5E11.0%20%7C%5E12.0-FF2D20.svg)](https://laravel.com/)
+[![License](https://img.shields.io/badge/license-MIT-brightgreen.svg)](LICENSE)
 
-A lightweight, easy-to-use file manager package for Laravel applications with built-in CKEditor integration.
+**Keywords:** Laravel File Manager, File Uploader, File Picker, CKEditor File Browser, Media Manager, Image Upload, Laravel Package
+
+A lightweight, easy-to-use file manager package for Laravel applications with built-in CKEditor integration and popup file picker.
 
 ## Features
 
