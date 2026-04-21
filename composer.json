@@ -1,0 +1,27 @@
+{
+    "name": "riwash/simple-file-manager",
+    "description": "A simple file manager for Laravel integrated with CKEditor",
+    "type": "library",
+    "authors": [
+        {
+            "name": "Riwash Chamlagain",
+            "email": "technicalriwash@gmail.com"
+        }
+    ],
+    "require": {
+        "php": ">=8.0",
+        "laravel/framework": "^7.0 || ^8.0 || ^9.0 || ^10.0 || ^11.0 || ^12.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "Riwash\\SimpleFileManager\\": "src/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Riwash\\SimpleFileManager\\SimpleFileManagerServiceProvider"
+            ]
+        }
+    }
+}
