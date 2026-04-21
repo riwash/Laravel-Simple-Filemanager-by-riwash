@@ -2,6 +2,7 @@
     "name": "riwash/simple-file-manager",
     "description": "A simple file manager for Laravel integrated with CKEditor",
     "type": "library",
+    "license": "MIT",
     "authors": [
         {
             "name": "Riwash Chamlagain",

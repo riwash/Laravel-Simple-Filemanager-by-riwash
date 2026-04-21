@@ -371,7 +371,7 @@ $file = RiwashFilemanager::create([
 
 ## License
 
-This package is open-source software.
+This package is open-source software licensed under the [MIT License](LICENSE).
 
 ## Credits
 
